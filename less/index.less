@@ -50,18 +50,106 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 700px;
+  	margin: auto;
 }
 
-html, body {
-	height: 100%;
-	font-family: 'Macondo Swash Caps', cursive;
-
+*:before,*:after{
+	box-sizing:inherit
+}
+div {
+  border-radius: 5px;
 }
 
-h1, h2, h3, h4, h5 {
-	font-family: 'Macondo Swash Caps', cursive;
-	letter-spacing: 1px;
-
+.my-portrait{
+	float: left;
+	
 }
 
+#header {
+  height: 40px;
+  width: 100%;
+  background-color: #DB7093;
+  position: fixed;
+}
+
+#title {
+  margin-left: 3%;
+}
+
+#footer {
+  height: 50px;
+  width: 100%;
+  background-color: #DB7093;
+  clear: both;
+  position: fixed;
+}
+
+.left {
+  height: 1000px;
+  width: 45px;
+  background-color: #778899;
+  float: left;
+  position: fixed;
+}
+
+.right {
+  height: 1000px;
+  width: 45px;
+  background-color: #778899;
+  float: right;
+  position: fixed;
+}
+
+.stuff {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 55px;
+  width: 75%;
+  height: 1000px;
+}
+
+p,
+li {
+  font-family: 'Kodchasan';
+}
+
+.head {
+  font-size: 20px;
+}
+
+.nav {
+  border: 2px dotted #778899;
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+#name {
+  font-family: Sacramento;
+  float: right;
+  margin-top: 10px;
+  margin-right: 4%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .left,
+  .right {
+    display: none;
+  }
+  .stuff {
+    width: 100%;
+    margin-left: 10px;
+  }
+  
